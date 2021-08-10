@@ -1,4 +1,7 @@
-Minimal example for a possible bug for combining `ipython_blocking` with JupyterLab where the Prompt does not change from `[*]` to `[5]` after cell execution stops blocking.
+Minimal examples for bug reports in `ipython_blocking`.
 
-* Run in notebook (works): [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/dokempf/ipython-blocking-mwe/main?filepath=mwe.ipynb)
-* Run in Lab (does not work): [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/dokempf/ipython-blocking-mwe/main?filepath=..%2Flab%2Ftree%2Fmwe.ipynb)
+* In JupyterLab the prompt does not change from `[*]` to `[5]` after cell execution stops blocking https://github.com/kafonek/ipython_blocking/issues/12
+  * Run in notebook (works): [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/dokempf/ipython-blocking-mwe/main?filepath=mwe.ipynb)
+  * Run in Lab (does not work): [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/dokempf/ipython-blocking-mwe/main?filepath=..%2Flab%2Ftree%2Fmwe.ipynb)
+* Doing *Run All* in Jupyter notebook leads unexpected ordering of cell execution.
+  * Reproducer: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/dokempf/ipython-blocking-mwe/main?filepath=runall.ipynb)
