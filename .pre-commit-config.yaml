@@ -1,0 +1,15 @@
+repos:
+  # Make sure that Jupyter notebooks under version control
+  # have their outputs stripped before committing
+  - repo: https://github.com/kynan/nbstripout
+    rev: 0.4.0
+    hooks:
+      - id: nbstripout
+        files: ".ipynb"
+
+  # Add some general purpose useful hooks
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.0.1
+    hooks:
+      # Trim trailing whitespace of all sorts
+      - id: trailing-whitespace
